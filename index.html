@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typeface</title>
+	<link rel="stylesheet" type="text/css" href="styles_2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body id="body">
+<!-- 	<div class="info">(drag to build or click to knock over)</div> -->
+	<div class="restack" onclick="myFunction()">
+		<div class="letterno s">
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+		</div>
+		<div class="letterno t">
+			<div class="middle solid"></div>
+			<div class="top solid"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+		</div>
+		<div class="letterno a">
+			<div class="block solid"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+			<div class="hole"></div>
+			<div class="middle solid"></div>
+		</div>
+			<div class="letterno c">
+			<div class="circle solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+			<div class="holetwo space"></div>
+		</div>
+		<div class="letterno k">
+			<div class="left solid"></div>
+			<div class="hole space"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+		</div>
+	</div>
+	<div class="landing">
+		<div class="letter b">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<br>
+		<div class="letter a">
+			<div class="block solid"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+			<div class="hole"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter b">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<br>
+		<div class="letter y">
+			<div class="block solid"></div>
+			<div class="hole"></div>
+			<div class="holetriangleleft"></div>
+			<div class="holetriangleright"></div>
+			<div class="holetopleft space"></div>
+			<div class="holetopright space"></div>
+			<div class="middle"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+		</div>
+		<div class="letter b">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter l">
+			<div class="left solid"></div>
+			<div class="bottom solid "></div>
+			<div class="hole space"></div>
+		</div>
+		<br>
+		<div class="letter o">
+			<div class="outer solid"></div>
+			<div class="inner space"></div>
+		</div>
+		<div class="letter c">
+			<div class="circle solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+			<div class="holetwo space"></div>
+		</div>
+		<div class="letter k">
+			<div class="left solid"></div>
+			<div class="hole space"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+		</div>
+	</div>
+	<div class="viewer">
+		<div class="letter a">
+			<div class="block solid"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+			<div class="hole"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter b">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter c">
+			<div class="circle solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+			<div class="holetwo space"></div>
+		</div>
+		<div class="letter d">
+			<div class="left solid"></div>
+			<div class="circle solid"></div>
+			<div class="inside space"></div>
+		</div>
+		<div class="letter e">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter f">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter g">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="topleft solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter h">
+			<div class="left solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+		<div class="letter i">
+			<div class="middle solid"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+		</div>
+		<div class="letter j">
+			<div class="right solid"></div>
+			<div class="circle solid"></div>
+			<div class="hole space"></div>
+		</div>
+		<div class="letter k">
+			<div class="left solid"></div>
+			<div class="hole space"></div>
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+		</div>
+		<div class="letter l">
+			<div class="left solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+		</div>
+		<div class="letter m">
+			<div class="left solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+			<div class="middleleft solid"></div>
+			<div class="middleright solid"></div>
+		</div>
+		<div class="letter n">
+			<div class="left solid"></div>
+			<div class="middle solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+		</div>
+		<div class="letter o">
+			<div class="outer solid"></div>
+			<div class="inner space"></div>
+		</div>
+		<div class="letter p">
+			<div class="left solid"></div>
+			<div class="curve solid"></div>
+			<div class="inner space"></div>
+		</div>
+		<div class="letter q">
+			<div class="circle solid"></div>
+			<div class="hole space"></div>
+			<div class="tail solid">
+				<div class="cutout space"></div>
+			</div>
+		</div>
+		<div class="letter r">
+			<div class="left solid"></div>
+			<div class="top solid"></div>
+			<div class="hole space"></div>
+			<div class="bottom solid"></div>
+		</div>
+		<div class="letter s">
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+		</div>
+		<div class="letter t">
+			<div class="middle solid"></div>
+			<div class="top solid"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+		</div>
+		<div class="letter u">
+			<div class="left solid"></div>
+			<div class="right solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+		</div>
+		<div class="letter v">
+			<div class="block solid"></div>
+			<div class="hole"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+		</div>
+		<div class="letter w">
+			<div class="left solid"></div>
+			<div class="right solid"></div>
+			<div class="hole space"></div>
+			<div class="middleleft solid"></div>
+			<div class="middleright solid"></div>
+		</div>
+		<div class="letter x">
+			<div class="block solid"></div>
+			<div class="holebottom"></div>
+			<div class="holetop"></div>
+			<div class="holeleft"></div>
+			<div class="holeright"></div>
+			<div class="holetopright space"></div>
+			<div class="holebottomright space"></div>
+			<div class="holetopleft space"></div>
+			<div class="holebottomleft space"></div>
+		</div>
+		
+		<div class="letter y">
+			<div class="block solid"></div>
+			<div class="hole"></div>
+			<div class="holetriangleleft"></div>
+			<div class="holetriangleright"></div>
+			<div class="holetopleft space"></div>
+			<div class="holetopright space"></div>
+			<div class="middle"></div>
+			<div class="holeleft space"></div>
+			<div class="holeright space"></div>
+		</div>
+		<div class="letter z">
+			<div class="top solid"></div>
+			<div class="bottom solid"></div>
+			<div class="hole space"></div>
+			<div class="middle solid"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

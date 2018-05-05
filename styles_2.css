@@ -1,0 +1,1324 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.landing {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: -100px;
+	text-align: center;
+	/*overflow: scroll;*/
+	background: white;
+	transform: scale(0.8);
+
+
+}
+
+.restack {
+	position: fixed;
+	height: 200px;
+	width:100%;
+	text-align: center;
+	z-index: 20000000000000000000000;
+	display: none;
+	padding: 50px;
+	transform: scale(0.4);
+	top: -100px;
+
+}
+
+.info {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 50px;
+	height: 20px;
+	z-index: 200000000000000000000001;
+	text-align: center;
+	font-family: 'helvetica';
+	font-weight: lighter;
+	font-size: 2em;
+	background: white;
+	color: blue;
+	border: 6px solid blue;
+	display: none;
+}
+
+.box {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border: 1px solid blue;
+	display: inline-block;
+}
+
+.viewer {
+	position: absolute;
+	padding-top: 10vh;
+	width: 100%;
+	height: 200vh;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 100vh;
+	z-index: 100;
+	background: blue;
+	text-align: center;
+/*	border: 10px solid blue;*/
+}
+.letter {
+	position: relative;
+	width: 200px;
+	height: 200px;
+/*	border: 1px solid black;*/
+	display: inline-block;
+	margin: 20px;
+	overflow: hidden;
+	border: 6px solid blue;
+	margin: 0;
+	background-color: blue;
+	
+}
+
+.letterno {
+	position: relative;
+	width: 200px;
+	height: 200px;
+/*	border: 1px solid black;*/
+	display: inline-block;
+	margin: 20px;
+	overflow: hidden;
+	border: 6px solid blue;
+	margin: 0;
+	background-color: blue;
+
+	
+}
+
+.solid {
+	
+}
+
+.a .block{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	
+}
+
+.a .hole{
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width:0; 
+    height:0; 
+    border-bottom:140px solid blue;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent; 
+}
+
+
+.a .middle{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	height: 8px;
+	width: 200px;
+	
+
+}
+
+.a .holeleft {
+	position: absolute;
+    left: -70px;
+    
+    width: 120px;
+    height: 200px;
+    border-bottom-right-radius: 30px;
+    transform: skewX(-20deg);
+}
+
+.a .holeright {
+	position: absolute;
+    right: -70px;
+    
+    width: 120px;
+    height: 200px;
+    border-bottom-left-radius: 30px;
+    transform: skewX(20deg);
+}
+
+.b .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.b .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+	
+}
+
+.b .top{
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    left: 100px;
+
+}
+
+.b .bottom {
+	position: absolute;
+    width: 100px;
+    height: 113px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    bottom: 0;
+    left: 100px;
+
+}
+
+.b .middle {
+	position: absolute;
+    margin: auto;
+    top: -10px;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    width: 170px;
+    
+}
+
+.c .circle {
+	position: absolute;
+	height:200px;
+    width:100px;
+    border-radius: 200px 0 0 200px;
+}
+
+.c .hole{
+	position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 120px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+.c .holetwo {
+	position: absolute;
+	width: 100px;
+	height: 80px;
+	
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.c .right {
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 200px;
+	
+	border-bottom-right-radius: 60px;
+	border-top-right-radius: 60px;
+}
+
+.d .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.d .circle {
+	position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 75%;
+    border-top-left-radius: 75%;
+    border-bottom-right-radius: 50%;
+}
+
+.d .inside {
+	position: absolute;
+    width: 120px;
+    height: 200px;
+    
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0px;
+    bottom: 0;
+    border-radius: 25%;
+}
+
+.e .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+
+}
+
+.e .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.e .top {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+    
+}
+
+.e .bottom {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+    
+}
+
+.e .middle {
+	position: absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 8px;
+    
+}
+
+.f .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.f .top {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+    
+}
+
+.f .middle {
+	position: absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 8px;
+    
+}
+
+.f .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.g .left {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	height: 140px;
+	
+	border-bottom-left-radius: 60px;
+
+}
+
+.g .topleft {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 60px;
+	height: 60px;
+	
+	border-top-left-radius: 60px;
+
+}
+
+.g .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.g .top {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+    
+    border-top-right-radius: 60%;
+}
+
+.g .bottom {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    
+    border-bottom-right-radius: 60%;
+}
+
+.g .middle {
+	position: absolute;
+	margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 8px;
+    
+}
+
+.h .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.h .right {
+	position: absolute;
+	right: 0;
+	width: 60px;
+	height: 200px;
+		
+}
+
+.h .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.h .middle {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	height: 8px;
+	width: 200px;
+	
+}
+
+.i .middle {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100px;
+    height: 200px;
+    
+}
+
+.i .holeleft {
+	position: absolute;
+	left: -50px;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.i .holeright {
+	position: absolute;
+    right: -50px;
+    
+    width: 120px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+.j .right {
+	position: absolute;
+	right: 0;
+	width: 60px;
+	height: 100px;
+		
+}
+
+.j .circle {
+	position: absolute;
+	bottom: 0;
+	height:100px;
+    width:200px;
+    border-radius: 0 0 200px 200px;
+  	
+}
+
+.j .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.k .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.k .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.k .top {
+	position: absolute;
+    width: 60px;
+    height: 100px;
+    top: 0;
+    left: 68px;
+    
+    transform: skewX(-45deg);
+}
+
+.k .bottom {
+	position: absolute;
+    width: 60px;
+    height: 100px;
+    bottom: 0;
+    left: 68px;
+    
+    transform: skewX(45deg);
+}
+
+.l .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+
+}
+
+.l .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.l .bottom {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+    
+}
+
+.m .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.m .right {
+	position: absolute;
+	right: 0;
+	width: 60px;
+	height: 200px;
+		
+}
+
+.m .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.m .middleleft {
+	position: absolute;
+	margin: auto;
+    top: 0;
+    right: 0;
+    left: -48px;
+    width: 40px;
+    height: 145px;
+    transform: skewX(16deg);
+    
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+}
+
+.m .middleright{
+	position: absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    right: -48px;
+    width: 40px;
+    height: 145px;
+    transform: skewX(-16deg);
+    
+    z-index: 2;
+    border-bottom-right-radius: 10px;
+}
+
+.n .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.n .right {
+	position: absolute;
+	right: 0;
+	width: 60px;
+	height: 200px;
+		
+}
+
+.n .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.n .middle {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 40px;
+    height: 200px;
+    transform: skewX(24deg);
+    
+    z-index: 2;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.o .outer {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	
+	border-radius: 50%;
+}
+
+.o .inner {
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 25%;
+}
+
+
+.p .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;	
+}
+
+.p .curve {
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;  
+    left: 100px;
+}
+
+.p .inner{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.q .circle {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.q .hole {
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 25%;
+}
+
+.q .tail {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.tail .cutout {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	top: -15px;
+	right: 0px;
+}
+
+.r .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+}
+
+.r .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.r .top{
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    left: 100px;
+
+}
+
+.r .bottom {
+	position: absolute;
+    right: 58px;
+    bottom: 0;
+    width: 60px;
+    height: 100px;
+    transform: skewX(45deg);   
+}
+
+.s .top {
+	position: absolute;
+    width: 65px;
+    height: 130px;
+    border-radius: 130px 0 0 130px;
+    left: 0px;
+}
+
+
+.s .bottom {
+	position: absolute;
+    width: 65px;
+    height: 130px;
+   	border-radius: 0 130px 130px 0;
+    right: 0px;
+    bottom: 0;
+}
+
+.s .hole {
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 25%;
+}
+
+.t .middle {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100px;
+    height: 200px;
+    
+}
+
+.t .holeleft {
+	position: absolute;
+    left: 0px;
+    width: 80px;
+    height: 170px;
+    bottom: -10px;
+    border-bottom-right-radius: 72px;
+    border-top-left-radius: 35px;
+}
+
+.t .holeright {
+	position: absolute;
+    right: 0;
+    width: 80px;
+    height: 170px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 72px;
+    bottom: -10px;
+}
+
+.t .top {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 60px; 
+}
+
+
+.u .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.u .left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100px;
+}
+
+.u .right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+	height: 100px;
+}
+
+.u .bottom {
+	position: absolute;
+	bottom: 0;
+	height:100px;
+    width:200px;
+    border-radius: 0 0 200px 200px;
+}
+
+.v .block{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+.v .hole{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	width:0; 
+    height:0; 
+    border-top:140px solid blue;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent; 
+}
+
+.v .holeleft {
+	position: absolute;
+    left: -70px;
+    width: 120px;
+    height: 200px;
+    transform: skewX(20deg);
+    border-top-right-radius: 30px;
+}
+
+.v .holeright {
+	position: absolute;
+    right: -70px;
+    width: 120px;
+    height: 200px;
+    border-top-left-radius: 30px;
+    transform: skewX(-20deg);
+}
+
+.w .left {
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 200px;
+	
+}
+
+.w .right {
+	position: absolute;
+	right: 0;
+	width: 60px;
+	height: 200px;
+		
+}
+
+.w .hole {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 200px;
+	border-radius: 25%;
+}
+
+.w .middleleft {
+	position: absolute;
+	margin: auto;
+    bottom: 0;
+    right: 0;
+    left: -48px;
+    width: 40px;
+    height: 145px;
+    transform: skewX(-16deg);
+    
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+}
+
+.w .middleright{
+	position: absolute;
+	margin: auto;
+    bottom: 0;
+    left: 0;
+    right: -48px;
+    width: 40px;
+    height: 145px;
+    transform: skewX(16deg);
+    
+    z-index: 2;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.x .left {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	transform: skewX(32deg);
+	
+
+}
+
+.x .block {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	
+}
+
+.x .holetop {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 80px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.x .holebottom {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.x .holeleft {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid blue;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+}
+
+.x .holeright {
+	position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 50px solid blue;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+}
+
+.x .holetopright {
+	position: absolute;
+    right: 18px;
+    top: 0px;
+    
+    width: 20px;
+    height: 100px;
+    transform: skewX(-32deg);
+    border-top-left-radius: 30px;
+    z-index: 6;
+}
+
+.x .holetopleft {
+    position: absolute;
+    left: 18px;
+    top: 0px;
+    
+    width: 20px;
+    height: 100px;
+    transform: skewX(32deg);
+    border-top-right-radius: 30px;
+    z-index: 6;
+}
+
+.x .holebottomleft {
+	position: absolute;
+    left: 18px;
+    bottom: 0px;
+    
+    width: 20px;
+    height: 100px;
+    transform: skewX(-32deg);
+    border-bottom-right-radius: 30px;
+    z-index: 6;
+}
+
+.x .holebottomright {
+	position: absolute;
+    right: 18px;
+    bottom: 0px;
+    
+    width: 20px;
+    height: 100px;
+    transform: skewX(32deg);
+    border-bottom-left-radius: 30px;
+    z-index: 6;
+}
+
+
+.y .holeleft {
+	position: absolute;
+    left: 0px;
+    width: 80px;
+    height: 90px;
+    bottom: -10px;
+    border-bottom-right-radius: 72px;
+    border-top-left-radius: 35px;
+}
+
+.y .holeright {
+	position: absolute;
+    right: 0px;
+    
+    width: 80px;
+    height: 90px;
+    bottom: -10px;
+    border-bottom-left-radius: 72px;
+    border-top-right-radius: 35px;
+}
+
+
+
+.y .holetopleft {
+	position: absolute;
+    left: 26px;
+    top: 2px;
+    
+    width: 20px;
+    height: 120px;
+    transform: skewX(30deg);
+    border-top-right-radius: 30px;
+    z-index: 6;
+
+}
+
+.y .holetopright {
+	position: absolute;
+    right: 26px;
+    top: 2px;
+    
+    width: 20px;
+    height: 120px;
+    transform: skewX(-30deg);
+    border-top-left-radius: 30px;
+    z-index: 6;
+}
+
+.y .block {
+	position: absolute;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	
+}
+
+.y .hole {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 90px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    z-index: 5;
+}
+
+.y .holetriangleleft {
+	position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 68px solid blue;
+    border-bottom: 200px solid transparent;
+}
+
+.y .holetriangleright {
+	position: absolute;
+    width: 0;
+    height: 0;
+    right: 0; 
+    border-top: 100px solid transparent;
+    border-right: 68px solid blue;
+    border-bottom: 200px solid transparent;
+}
+
+.z .top {
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	
+	border-bottom-right-radius: 20px;
+}
+
+.z .bottom {
+	position: absolute;
+	bottom: 0;
+	width: 200px;
+	height: 60px;
+	
+	border-top-left-radius: 20px;
+}
+
+.z .hole{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	width: 120px;
+	height: 205px;
+	border-radius: 25%;
+}
+
+.z .middle {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 70px;
+    height: 200px;
+    transform: skewX(-55deg);
+    
+    z-index: 2;
+}
+
+.space {
+	background-color: blue;
+}
+
+.solid {
+	background-color: white;
+}
